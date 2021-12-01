@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: ActionTypes.SET_MEDIA_QUERY, payload: mediaMatches });
-  }, []);
+  }, [dispatch, mediaMatches]);
 
   return (
     <>
