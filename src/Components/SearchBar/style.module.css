@@ -1,0 +1,11 @@
+.searchBar {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 50%;
+}
+
+@media screen and (max-width: 670px) {
+  .searchBar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.card {
+  cursor: pointer;
+  background-color: #5e84f1;
+  color: #fff;
+  transition: all 250ms linear;
+}
+
+.card:hover {
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 1px #ffffff80;
+}
+
+.card + .card {
+  margin-top: 0.5rem;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  transition: all 250ms linear;
+}
+
+.card:hover .imageWrapper {
+  border-radius: 5px 5px 0 0;
+}
+
+.imageWrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 0.2rem 0.5rem 0.5rem;
+  border-radius: inherit;
+}
+
+.videoTitle {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.channelName {
+  margin: 0;
+  padding: 0;
+}
+
+.time {
+  font-size: 0.7rem;
+}
+
+.card.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #00ddff;
+}
+
+.card.main .content {
+  justify-content: space-between;
+}
+
+.card.main:hover .imageWrapper {
+  border-radius: 5px 0 0 5px;
+}

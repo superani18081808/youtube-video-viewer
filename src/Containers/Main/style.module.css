@@ -1,0 +1,18 @@
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  width: 1400px;
+  max-width: 98%;
+  margin: 1rem auto;
+}
+
+.main.mainListing {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 670px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+import style from "./style.module.css";
+
+const VideoPlayer = ({ videoId }) => {
+  return (
+    <iframe
+      className={style.videoPlayer}
+      src={`https://www.youtube.com/embed/${videoId}`}
+      frameborder="0"
+      allow="accelerometer; autoplay; gyroscope; picture-in-picture; fullscreen"
+    ></iframe>
+  );
+};
+
+export default VideoPlayer;

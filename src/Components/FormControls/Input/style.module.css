@@ -1,0 +1,15 @@
+.input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: outline 150ms linear;
+}
+
+.input:focus {
+  outline: 2px solid #ffd600;
+  box-shadow: 0 1px 2px #ffd600, 1px 0 2px #ffd600;
+}

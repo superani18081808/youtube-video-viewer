@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #282c34;
+  color: #fff;
+  min-height: 100vh;
+}
