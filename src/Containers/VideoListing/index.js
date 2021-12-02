@@ -5,7 +5,7 @@ import Button from "../../Components/FormControls/Button";
 import { fetchMoreVideos } from "../../REDUX/ActionCreator";
 
 const VideoListing = () => {
-  const { videos, activeVideo } = useSelector((state) => ({ videos: state.videos, activeVideo: state.activeVideo }));
+  const { videos, activeVideo, nextPageToken } = useSelector((state) => ({ videos: state.videos, activeVideo: state.activeVideo, nextPageToken: state.requestData.nextPageToken }));
   const dispatch = useDispatch();
 
   const loadMore = () => {
@@ -14,7 +14,7 @@ const VideoListing = () => {
 
   return (
     <div>
-      <h2 className={style.title}>Videos You Searched</h2>
+      <h2 className={style.title}>{videos.length === 0 ? "Search Something" : "Videos You Searched"}</h2>
 
       <div className={style.container}>
         {videos.map((video) => (
@@ -22,7 +22,7 @@ const VideoListing = () => {
         ))}
       </div>
 
-      <Button onClick={loadMore}>Load More...</Button>
+      {nextPageToken ? <Button onClick={loadMore}>Load More...</Button> : null}
     </div>
   );
 };

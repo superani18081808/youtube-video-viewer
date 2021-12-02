@@ -6,7 +6,6 @@ const defaultState = {
   requestData: {},
   videos: [],
   activeVideo: {},
-  mediaMatches: false,
 };
 
 const rootReducer = (state = defaultState, action) => {
@@ -23,8 +22,6 @@ const rootReducer = (state = defaultState, action) => {
     }
     case ActionTypes.SET_ACTIVE_VIDEO:
       return { ...state, activeVideo: action.payload };
-    case ActionTypes.SET_MEDIA_QUERY:
-      return { ...state, mediaMatches: action.payload };
     default:
       return state;
   }

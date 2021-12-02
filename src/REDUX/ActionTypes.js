@@ -3,7 +3,6 @@ const ActionTypes = {
   APPEND_VIDEOS: "APPEND_VIDEOS",
   SET_REQUEST_DATA: "SET_REQUEST_DATA",
   SET_ACTIVE_VIDEO: "SET_ACTIVE_VIDEO",
-  SET_MEDIA_QUERY: "SET_MEDIA_QUERY",
 };
 
 export default ActionTypes;
