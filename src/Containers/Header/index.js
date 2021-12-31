@@ -14,7 +14,7 @@ const Header = () => {
     <header className={style.header}>
       <div>
         <h1 onClick={gotoHome} className={style.logo}>
-          YouTube
+          Nova
         </h1>
         <SearchBar />
       </div>
