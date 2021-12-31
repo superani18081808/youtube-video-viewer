@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+
 .header {
-  background-color: #00ddff;
+  background-color: #6d32a8;
   padding: 1.2rem 0 0.2rem;
 }
 
@@ -14,7 +16,7 @@
 
 .logo {
   cursor: pointer;
-  font-family: "Lobster", cursive;
+  font-family: "Spartan";
   margin: 0;
   padding: 0;
 }
